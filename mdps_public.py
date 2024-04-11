@@ -27,7 +27,7 @@ with st.sidebar:
                           
                           ['Diabetes Prediction',
                            'Heart Disease Prediction',
-                           'Parkinsons Prediction'],
+                           'Dementia Prediction'],
                           icons=['activity','heart','person'],
                           default_index=0)
     
@@ -154,10 +154,10 @@ if (selected == 'Heart Disease Prediction'):
     
 
 # Parkinson's Prediction Page
-if (selected == "Parkinsons Prediction"):
+if (selected == "Dementia Prediction"):
     
     # page title
-    st.title("Parkinson's Disease Prediction using ML")
+    st.title("Dementia's Disease Prediction using ML")
     
     col1, col2, col3, col4, col5 = st.columns(5)  
     
@@ -233,13 +233,13 @@ if (selected == "Parkinsons Prediction"):
     parkinsons_diagnosis = ''
     
     # creating a button for Prediction    
-    if st.button("Parkinson's Test Result"):
+    if st.button("Dementia's Test Result"):
         parkinsons_prediction = parkinsons_model.predict([[fo, fhi, flo, Jitter_percent, Jitter_Abs, RAP, PPQ,DDP,Shimmer,Shimmer_dB,APQ3,APQ5,APQ,DDA,NHR,HNR,RPDE,DFA,spread1,spread2,D2,PPE]])                          
         
         if (parkinsons_prediction[0] == 1):
-          parkinsons_diagnosis = "The person has Parkinson's disease"
+          parkinsons_diagnosis = "The person has Dementia's disease"
         else:
-          parkinsons_diagnosis = "The person does not have Parkinson's disease"
+          parkinsons_diagnosis = "The person does not have Dementia's disease"
         
     st.success(parkinsons_diagnosis)
 
