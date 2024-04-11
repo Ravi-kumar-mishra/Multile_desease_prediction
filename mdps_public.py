@@ -19,12 +19,7 @@ parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 # sidebar for navigation
 with st.sidebar:
     
-    selected = option_menu('Disease Prediction System By 
-                           
-    Rani Lakshmi Bhai s,
-    Rakhita Baburaj,
-    Sneha Kuriakose,
-    Ravi Kumar Mishra',
+    selected = option_menu('Disease Prediction System By Rani Lakshmi Bhai s,Rakhita Baburaj,Sneha Kuriakose,Ravi Kumar Mishra',
                           
                           [
                            'Dementia Prediction'],
