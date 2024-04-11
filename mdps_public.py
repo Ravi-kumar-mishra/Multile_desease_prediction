@@ -20,7 +20,8 @@ parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 with st.sidebar:
     
     selected = option_menu('Disease Prediction System By 
-    Rani Lakshmi nhai s,
+                           
+    Rani Lakshmi Bhai s,
     Rakhita Baburaj,
     Sneha Kuriakose,
     Ravi Kumar Mishra',
