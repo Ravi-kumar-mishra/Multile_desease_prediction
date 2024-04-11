@@ -19,7 +19,7 @@ parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 # sidebar for navigation
 with st.sidebar:
     
-    selected = option_menu('Disease Prediction System By Rani Lakshmi Bhai s,Rakhita Baburaj,Sneha Kuriakose,Ravi Kumar Mishra',
+    selected = option_menu('Disease Prediction System By Rani Lakshmi Bhai s,Rakhitha Baburaj,Sneha Kuriakose,Ravi Kumar Mishra',
                           
                           [
                            'Dementia Prediction'],
@@ -152,7 +152,7 @@ if (selected == 'Heart Disease Prediction'):
 if (selected == "Dementia Prediction"):
     
     # page title
-    st.title("Dementia's Disease Prediction using ML")
+    st.title("Dementia Disease Detection")
     
     col1, col2, col3, col4, col5 = st.columns(5)  
     
@@ -228,7 +228,7 @@ if (selected == "Dementia Prediction"):
     parkinsons_diagnosis = ''
     
     # creating a button for Prediction    
-    if st.button("Dementia's Test Result"):
+    if st.button("Dementia Test Result"):
         parkinsons_prediction = parkinsons_model.predict([[fo, fhi, flo, Jitter_percent, Jitter_Abs, RAP, PPQ,DDP,Shimmer,Shimmer_dB,APQ3,APQ5,APQ,DDA,NHR,HNR,RPDE,DFA,spread1,spread2,D2,PPE]])                          
         
         if (parkinsons_prediction[0] == 1):
